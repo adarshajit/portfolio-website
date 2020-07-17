@@ -1,158 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-* {
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+header{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
 }
 
-body {
+.navbar{
+    padding: 20px 0;
+}
+.navbar-brand{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.nav-item{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+.navbar-light .navbar-nav .nav-item.active .nav-link, .navbar-light .navbar-nav .nav-item .nav-link:hover
+{
+    background: #262626;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link{
+    color: #262626;
+    padding: 5px 15px;
+}
+.banner{
+    position: relative;
+    background: url(bg.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 250px 0 200px ;
+}
+
+.banner h1{
     margin: 0;
     padding: 0;
-    position: relative;
-}
-
-.navbar {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-
-}
-
-.brand-title {
-    font-size: 1.5rem;
-    margin: .5rem;
-    margin-right: auto;
-    cursor: pointer;
-}
-
-.navbar-links {
-    height: 100%;
-}
-
-.navbar-links ul {
-    display: flex;
-    margin: auto;
-    padding: 0;
-
-}
-
-.navbar-links li {
-    list-style: none;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.navbar-links li a {
-    display: block;
-    text-decoration: none;
-    padding: 1rem;
+    font-size: 2.8em;
+    font-weight: 1000;
     color: black;
-
-}
-
-.navbar-links li:hover {
-    background-color: rgb(255, 189, 45);
-    border-radius: 2rem;
-
-    
-}
-
-.toggle-button {
-    position: absolute;
-    top: 1.35rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: black;
-    border-radius: 10px;
-}
-
-@media (max-width: 800px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .toggle-button {
-        display: flex;
-    }
-
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-        background-color: rgb(255, 189, 45);
-    }
-
-    .navbar-links ul li {
-        text-align: center;
-    }
-
-    .navbar-links ul li a {
-        padding: .5rem 1rem;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
-}
-
-.bmg{
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    z-index: 1;
-}
-
-.parent{
-    position: absolute;
-    max-width: 400px;
-    flex-direction: row-reverse;
-    padding: 50px;
-    top: 250px;
-    left: 920px;
-    background: rgba(255,255,255,0.2);
-    border-radius: 10px;
-    z-index: 3;
-}
-
-.parent h2{
-    margin: 0 0 20px;
-    padding: 0;
-    font-size: 48px;
-    text-align: center;
-    color: black;
-}
-
-.parent p{
-    font-size: 24px;
-    text-align: center;
     text-transform: uppercase;
-    color: black;
 }
 
+.navbar-light .navbar-toggler{
+    border: none;
+    color: #fff;
+    border: 2px solid #7f7f7f;
+    border-radius: 0;
 
-.about h1{
-    font-size: 115px;
-    font-weight: bold;
-    margin: 7rem;
-    position: relative;
-    z-index: 1;
 }
 
 .dots{
@@ -166,7 +67,7 @@ body {
 }
   
 
-.box {
+.box1{
     top: 870px;
     left :300px;
     background: white;
@@ -177,3 +78,15 @@ body {
                 rgba(0,0,0, .25);
     z-index: 4;
   }
+
+
+@media(max-width:768px){
+    .banner{
+        padding: 200px 0;
+    }
+    .banner h2{
+        font-size: 1.8em;
+    }
+
+}
+

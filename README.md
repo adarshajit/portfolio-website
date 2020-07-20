@@ -1,3 +1,0 @@
-# mywebsite
-
-in devolopment

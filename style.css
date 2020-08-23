@@ -54,9 +54,12 @@ body{
     text-transform: uppercase;
 }
 
-.navbar-light .navbar-nav .nav-item{
-    padding: 5px;
+.navbar-light .navbar-nav .nav-item .nav-link{
+    padding: 5px 10px;
+    color: black;
 }
+
+
 
 .navbar-light .navbar-nav .nav-item:hover .nav-link{
     background-color: #000;
